@@ -1,1 +1,1 @@
-sds_algorithm
+자바로 푼 백준
