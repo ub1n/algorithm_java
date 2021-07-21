@@ -1,4 +1,4 @@
-package sds_algorithm.time_complexity;
+package java_algorithm.time_complexity;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

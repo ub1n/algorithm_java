@@ -1,4 +1,4 @@
-package sds_algorithm;
+package java_algorithm;
 
 import java.util.LinkedList;
 import java.util.Queue;

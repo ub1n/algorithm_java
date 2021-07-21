@@ -1,4 +1,4 @@
-package sds_algorithm.time_complexity;
+package java_algorithm.time_complexity;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -81,11 +81,11 @@ public class sumOfArr {
 				bPoint++;
 			}
 			else {
-				long acount=1;
-				long bcount=1;
+				long acount=0;
+				long bcount=0;
 				long currentA=subA.get(aPoint);
 				long currentB=subB.get(bPoint);
-				while(true) {
+				/*while(true) {
 					aPoint++;
 					if(aPoint==subA.size()) {
 						break;
@@ -95,8 +95,22 @@ public class sumOfArr {
 					}else {
 						break;
 					}
+				}*/
+				while(true) {
+					if(aPoint==subA.size()||currentA!=subA.get(aPoint)) {
+						break;
+					}
+					aPoint++;
+					acount++;
 				}
 				while(true) {
+					if(bPoint==subB.size()||currentB!=subB.get(bPoint)) {
+						break;
+					}
+					bPoint++;
+					bcount++;
+				}
+				/*while(true) {
 					bPoint++;
 					if(bPoint==subB.size()) {
 						break;
@@ -106,7 +120,7 @@ public class sumOfArr {
 					}else {
 						break;
 					}
-				}
+				}*/
 				
 				answer+=acount*bcount;
 			}
